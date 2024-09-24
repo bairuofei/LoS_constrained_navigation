@@ -1,4 +1,4 @@
 # LoS_constrained_navigation
-A line-of-sight constrained multi-robot navigation method that can be applied in complex unknown environments.
+[Submit to ICRA 2025] Realm: Real-time Line-of-Sight Maintenance in Multi-Robot Navigation with Unknown Obstacles
 
 ![Four-robot navigation](demo.gif)
