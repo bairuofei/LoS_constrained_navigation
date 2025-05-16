@@ -21,7 +21,7 @@ Ruofei Bai<sup>1,2</sup>, Shenghai Yuan<sup>1</sup>, Kun Li<sup>3</sup>, Honglia
 </div>
 
 
-> Code will be released soon! 
+> We will release the source code in June 2025! 
 
 ## Demo Video
 
