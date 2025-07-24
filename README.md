@@ -21,10 +21,22 @@ Ruofei Bai<sup>1,2</sup>, Shenghai Yuan<sup>1</sup>, Kun Li<sup>3</sup>, Honglia
 </div>
 
 
-> We will release the source code in June 2025! 
+## News
+
+- Our paper has been selected as a <span style="color:red">**Best Paper Award FInalist of ICRA 2025**</span>!
+
+> Due to another ongoing work, we will organize the code and release the source code in **August 2025**. If you have any request or issues, feel free to open an issue. 
 
 ## Demo Video
 
-Please wait for the video to load...
+Short video to intorduce our work:
+
+[![](./video_cover.png)](https://www.bilibili.com/video/BV1UB7fzVEeu/?spm_id_from=333.337.search-card.all.click&vd_source=2d11232d984feb225a544f200a5b226e)
+
+
+
+
+
+Please wait for the simulation gif to load...
 
 ![Four-robot navigation](demo.gif)
