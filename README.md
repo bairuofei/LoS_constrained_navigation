@@ -23,7 +23,7 @@ Ruofei Bai<sup>1,2</sup>, Shenghai Yuan<sup>1</sup>, Kun Li<sup>3</sup>, Honglia
 
 ## News
 
-- Our paper has been selected as a <span style="color:red">**Best Paper Award FInalist of ICRA 2025**</span>!
+- Our paper has been selected as a <span style="color:red">**Best Paper Award Finalist of ICRA 2025**</span>!
 
 > Due to another ongoing work, we will organize the code and release the source code in **August 2025**. If you have any request or issues, feel free to open an issue. 
 
