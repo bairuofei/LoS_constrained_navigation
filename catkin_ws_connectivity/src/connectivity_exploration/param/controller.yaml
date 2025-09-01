@@ -1,0 +1,56 @@
+# Lambda function
+lambda_prefer : 0.05  # previous 0.05 最低时会接近0.1甚至0. 
+control_rate: 30 
+
+# Communication radius
+k_gamma : 1   # coefficient of the communication radius constraints 
+d_comm_max : 25  # radius beyond which the communication fails 
+d_comm_min : 22  # radius beyond which the communication quality reduces
+
+# Prefered inter-robot distance
+k_beta : 1  # coefficient of the preferred inter-robot constraints
+d_inter : 5  # prefered inter-robot distance
+sigma : 20 # how hard the prefered inter-robot distance constraints is
+
+# Collision avoidance with other robots
+k_alpha : 1
+d_coll_min : 0.5
+d_coll_max : 1.2
+
+# Collision avoidance with obstacle
+k_alpha_obs : 1
+d_coll_obs_min : 0.5
+d_coll_obs_max : 1.2
+
+# LoS constraints
+k_omega: 1
+d_los_min: 0.2
+d_los_max: 4
+alpha_relax: 10  # larger alpha leads better approximation of maximimum
+beta_relax: 1   # larger beta leads better approximation of minimum
+flip_radius: 150  # Previous 100
+visiable_range: 30
+
+# Scaling factor of the exploration force (to avoid conflict with connectivity force in critical cases)
+leader_scaling_factor: 1.2  # default scaling factor of exploration force, for leading robot
+basic_scaling_factor: 0.6   ## default scaling factor of exploration force, for secondary robots
+leader_crucial_connectivity_force: 2  # when gradient larger than this value, reset the scaling factor of exploration force for leading robot
+leader_crucial_scaling_factor: 0.6
+all_crucial_connectivity_force: 5  # when gradient larger than this value, set the scaling factor of exploration force as all_crucial_scaling_factor
+all_crucial_scaling_factor: 0.0
+
+# Final movement step
+step : 0.05
+
+# Target tolerance in robot navigation / m
+target_tolerance: 1.5
+
+use_dk: false
+enable_mst: false
+
+# Record results
+save_folder: "/home/ruofei/code/cpp/catkin_ws_connectivity/src/connectivity_exploration/record"
+enable_record: False
+
+# Print edge weight
+print_edge_weight: False

@@ -1,0 +1,4 @@
+<launch>
+    <!-- 设置发布节点 -->
+    <node pkg="rostopic" type="rostopic" name="stop_publisher" args="pub /stop std_msgs/Bool false -r 1" />
+</launch>

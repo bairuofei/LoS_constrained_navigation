@@ -1,0 +1,37 @@
+# docs
+*.drawio
+.$*
+
+
+# Results and logs
+record/*
+
+
+# Code cache
+scripts/archive/
+scripts/__*
+
+
+# point cloud maps of the testing environment
+data/
+
+
+# task specification files
+param/tasks/
+
+
+# visualization scripts
+visualize/
+
+
+# scripts/six_navigation.py
+scripts/VisibleRegionApprox.py
+
+
+# specific launch files
+launch/forest_exploration
+
+
+# test files
+test/
+result/

@@ -1,0 +1,963 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /TF1/Frames1
+        - /goalpoint21
+        - /tello_target1/Status1
+      Splitter Ratio: 0.5
+    Tree Height: 1079
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Name: Time
+    SyncMode: 0
+    SyncSource: Filterscan1
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.20000000298023224
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 100
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 0.5
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Name: robot1
+      Robot Description: robot_1/robot_description
+      TF Prefix: robot_1
+      Update Interval: 0
+      Value: false
+      Visual Enabled: true
+    - Alpha: 0.5
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Name: robot2
+      Robot Description: robot_2/robot_description
+      TF Prefix: robot_2
+      Update Interval: 0
+      Value: false
+      Visual Enabled: true
+    - Alpha: 0.5
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Name: robot3
+      Robot Description: robot_3/robot_description
+      TF Prefix: robot_3
+      Update Interval: 0
+      Value: false
+      Visual Enabled: true
+    - Alpha: 0.5
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Name: robot4
+      Robot Description: robot_4//robot_description
+      TF Prefix: robot_4
+      Update Interval: 0
+      Value: false
+      Visual Enabled: true
+    - Alpha: 0.5
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Name: robot5
+      Robot Description: robot_5/robot_description
+      TF Prefix: robot_5
+      Update Interval: 0
+      Value: false
+      Visual Enabled: true
+    - Alpha: 0.5
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+      Name: robot6
+      Robot Description: robot_6/robot_description
+      TF Prefix: robot_6
+      Update Interval: 0
+      Value: false
+      Visual Enabled: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 245; 121; 0
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud1
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.029999999329447746
+      Style: Flat Squares
+      Topic: /robot_1/velodyne_points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 138; 226; 52
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.029999999329447746
+      Style: Flat Squares
+      Topic: /robot_2/velodyne_points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 239; 41; 41
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.07999999821186066
+      Style: Flat Squares
+      Topic: /robot_1/laser_scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 138; 226; 52
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: LaserScan2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.07999999821186066
+      Style: Flat Squares
+      Topic: /robot_2/laser_scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 0; 118; 201
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: LaserScan3
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.07999999821186066
+      Style: Flat Squares
+      Topic: /robot_3/laser_scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 204; 41; 204
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: LaserScan4
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.07999999821186066
+      Style: Flat Squares
+      Topic: /robot_4/laser_scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 239; 41; 41
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Filterscan1
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.019999999552965164
+      Style: Flat Squares
+      Topic: /robot_1/filter_scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 138; 226; 52
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Filterscan2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.019999999552965164
+      Style: Flat Squares
+      Topic: /robot_2/filter_scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 52; 101; 164
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: FilterScan3
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.019999999552965164
+      Style: Flat Squares
+      Topic: /robot_3/filter_scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /robot_1/test_points
+      Name: testPoint
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /robot_1/scp_boundary
+      Name: visible1
+      Namespaces:
+        lines: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /robot_2/scp_boundary
+      Name: visible2
+      Namespaces:
+        lines: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /robot_3/scp_boundary
+      Name: visible3
+      Namespaces:
+        lines: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /robot_4/scp_boundary
+      Name: visible4
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /robot_1/scp_reflectPoints
+      Name: convexhull_1
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /robot_1/scp_augment
+      Name: Augment_1
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /goal_marker
+      Name: Goal
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /edge_marker
+      Name: ConnectEdge
+      Namespaces:
+        lines: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        map:
+          Value: false
+        odom:
+          Value: true
+        robot_1/back_sonar:
+          Value: false
+        robot_1/base_link:
+          Value: true
+        robot_1/front_sonar:
+          Value: false
+        robot_1/p3at_back_left_axle:
+          Value: false
+        robot_1/p3at_back_left_hub:
+          Value: false
+        robot_1/p3at_back_left_wheel:
+          Value: false
+        robot_1/p3at_back_right_axle:
+          Value: false
+        robot_1/p3at_back_right_hub:
+          Value: false
+        robot_1/p3at_back_right_wheel:
+          Value: false
+        robot_1/p3at_front_left_axle:
+          Value: false
+        robot_1/p3at_front_left_hub:
+          Value: false
+        robot_1/p3at_front_left_wheel:
+          Value: false
+        robot_1/p3at_front_right_axle:
+          Value: false
+        robot_1/p3at_front_right_hub:
+          Value: false
+        robot_1/p3at_front_right_wheel:
+          Value: false
+        robot_1/sensor_laser:
+          Value: false
+        robot_1/support:
+          Value: false
+        robot_1/top_plate:
+          Value: false
+        robot_1/velodyne:
+          Value: false
+        robot_1/velodyne_base_link:
+          Value: false
+        robot_2/back_sonar:
+          Value: false
+        robot_2/base_link:
+          Value: true
+        robot_2/front_sonar:
+          Value: false
+        robot_2/p3at_back_left_axle:
+          Value: false
+        robot_2/p3at_back_left_hub:
+          Value: false
+        robot_2/p3at_back_left_wheel:
+          Value: false
+        robot_2/p3at_back_right_axle:
+          Value: false
+        robot_2/p3at_back_right_hub:
+          Value: false
+        robot_2/p3at_back_right_wheel:
+          Value: false
+        robot_2/p3at_front_left_axle:
+          Value: false
+        robot_2/p3at_front_left_hub:
+          Value: false
+        robot_2/p3at_front_left_wheel:
+          Value: false
+        robot_2/p3at_front_right_axle:
+          Value: false
+        robot_2/p3at_front_right_hub:
+          Value: false
+        robot_2/p3at_front_right_wheel:
+          Value: false
+        robot_2/sensor_laser:
+          Value: false
+        robot_2/support:
+          Value: false
+        robot_2/top_plate:
+          Value: false
+        robot_2/velodyne:
+          Value: false
+        robot_2/velodyne_base_link:
+          Value: false
+        robot_3/back_sonar:
+          Value: false
+        robot_3/base_link:
+          Value: true
+        robot_3/front_sonar:
+          Value: false
+        robot_3/p3at_back_left_axle:
+          Value: false
+        robot_3/p3at_back_left_hub:
+          Value: false
+        robot_3/p3at_back_left_wheel:
+          Value: false
+        robot_3/p3at_back_right_axle:
+          Value: false
+        robot_3/p3at_back_right_hub:
+          Value: false
+        robot_3/p3at_back_right_wheel:
+          Value: false
+        robot_3/p3at_front_left_axle:
+          Value: false
+        robot_3/p3at_front_left_hub:
+          Value: false
+        robot_3/p3at_front_left_wheel:
+          Value: false
+        robot_3/p3at_front_right_axle:
+          Value: false
+        robot_3/p3at_front_right_hub:
+          Value: false
+        robot_3/p3at_front_right_wheel:
+          Value: false
+        robot_3/sensor_laser:
+          Value: false
+        robot_3/support:
+          Value: false
+        robot_3/top_plate:
+          Value: false
+        robot_3/velodyne:
+          Value: false
+        robot_3/velodyne_base_link:
+          Value: false
+      Marker Alpha: 1
+      Marker Scale: 2
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          odom:
+            robot_1/base_link:
+              robot_1/back_sonar:
+                {}
+              robot_1/front_sonar:
+                {}
+              robot_1/p3at_back_left_axle:
+                robot_1/p3at_back_left_hub:
+                  robot_1/p3at_back_left_wheel:
+                    {}
+              robot_1/p3at_back_right_axle:
+                robot_1/p3at_back_right_hub:
+                  robot_1/p3at_back_right_wheel:
+                    {}
+              robot_1/p3at_front_left_axle:
+                robot_1/p3at_front_left_hub:
+                  robot_1/p3at_front_left_wheel:
+                    {}
+              robot_1/p3at_front_right_axle:
+                robot_1/p3at_front_right_hub:
+                  robot_1/p3at_front_right_wheel:
+                    {}
+              robot_1/top_plate:
+                robot_1/support:
+                  robot_1/sensor_laser:
+                    {}
+                  robot_1/velodyne_base_link:
+                    robot_1/velodyne:
+                      {}
+            robot_2/base_link:
+              robot_2/back_sonar:
+                {}
+              robot_2/front_sonar:
+                {}
+              robot_2/p3at_back_left_axle:
+                robot_2/p3at_back_left_hub:
+                  robot_2/p3at_back_left_wheel:
+                    {}
+              robot_2/p3at_back_right_axle:
+                robot_2/p3at_back_right_hub:
+                  robot_2/p3at_back_right_wheel:
+                    {}
+              robot_2/p3at_front_left_axle:
+                robot_2/p3at_front_left_hub:
+                  robot_2/p3at_front_left_wheel:
+                    {}
+              robot_2/p3at_front_right_axle:
+                robot_2/p3at_front_right_hub:
+                  robot_2/p3at_front_right_wheel:
+                    {}
+              robot_2/top_plate:
+                robot_2/support:
+                  robot_2/sensor_laser:
+                    {}
+                  robot_2/velodyne_base_link:
+                    robot_2/velodyne:
+                      {}
+            robot_3/base_link:
+              robot_3/back_sonar:
+                {}
+              robot_3/front_sonar:
+                {}
+              robot_3/p3at_back_left_axle:
+                robot_3/p3at_back_left_hub:
+                  robot_3/p3at_back_left_wheel:
+                    {}
+              robot_3/p3at_back_right_axle:
+                robot_3/p3at_back_right_hub:
+                  robot_3/p3at_back_right_wheel:
+                    {}
+              robot_3/p3at_front_left_axle:
+                robot_3/p3at_front_left_hub:
+                  robot_3/p3at_front_left_wheel:
+                    {}
+              robot_3/p3at_front_right_axle:
+                robot_3/p3at_front_right_hub:
+                  robot_3/p3at_front_right_wheel:
+                    {}
+              robot_3/top_plate:
+                robot_3/support:
+                  robot_3/sensor_laser:
+                    {}
+                  robot_3/velodyne_base_link:
+                    robot_3/velodyne:
+                      {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /robot_1/viz_poly_topic
+      Name: FarPolyGraph
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /robot_1/viz_graph_topic
+      Name: FarVisibleGraph
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /robot_1/viz_path_topic
+      Name: GlobalPath1
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 239; 41; 41
+      Enabled: true
+      History Length: 1
+      Name: waypoint1
+      Queue Size: 10
+      Radius: 0.20000000298023224
+      Topic: /robot_1/way_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 138; 226; 52
+      Enabled: true
+      History Length: 1
+      Name: waypoint2
+      Queue Size: 10
+      Radius: 0.20000000298023224
+      Topic: /robot_2/way_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 0; 118; 201
+      Enabled: true
+      History Length: 1
+      Name: waypoint3
+      Queue Size: 10
+      Radius: 0.30000001192092896
+      Topic: /robot_3/way_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 204; 41; 204
+      Enabled: true
+      History Length: 1
+      Name: waypoint4
+      Queue Size: 10
+      Radius: 0.30000001192092896
+      Topic: /robot_4/way_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 239; 41; 41
+      Enabled: true
+      History Length: 1
+      Name: goalpoint1
+      Queue Size: 10
+      Radius: 0.20000000298023224
+      Topic: /robot_1/goal_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 138; 226; 52
+      Enabled: true
+      History Length: 1
+      Name: goalpoint2
+      Queue Size: 10
+      Radius: 0.20000000298023224
+      Topic: /robot_2/goal_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 0; 118; 201
+      Enabled: true
+      History Length: 1
+      Name: goalpoint3
+      Queue Size: 10
+      Radius: 0.5
+      Topic: /robot_3/goal_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 204; 41; 204
+      Enabled: true
+      History Length: 1
+      Name: goalpoint4
+      Queue Size: 10
+      Radius: 0.5
+      Topic: /robot_4/goal_point
+      Unreliable: false
+      Value: true
+    - Alpha: 0.30000001192092896
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /map
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /centroids_marker
+      Name: Frontiers
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 238; 238; 236
+      Enabled: true
+      History Length: 1
+      Name: goalpoint5
+      Queue Size: 10
+      Radius: 0.30000001192092896
+      Topic: /robot_5/goal_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 211; 215; 207
+      Enabled: true
+      History Length: 1
+      Name: waypoint5
+      Queue Size: 10
+      Radius: 0.5
+      Topic: /robot_5/way_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 46; 52; 54
+      Enabled: true
+      History Length: 1
+      Name: goalpoint6
+      Queue Size: 10
+      Radius: 0.5
+      Topic: /robot_6/goal_point
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 85; 87; 83
+      Enabled: true
+      History Length: 1
+      Name: waypoint6
+      Queue Size: 10
+      Radius: 0.5
+      Topic: /robot_6/way_point
+      Unreliable: false
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /robot_5/scp_boundary
+      Name: visible5
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /robot_6/scp_boundary
+      Name: visible6
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Class: rviz/PointStamped
+      Color: 255; 255; 255
+      Enabled: false
+      History Length: 1
+      Name: tello_target
+      Queue Size: 10
+      Radius: 0.20000000298023224
+      Topic: /tello_positions
+      Unreliable: false
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: odom
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Angle: 6.2899980545043945
+      Class: rviz/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Scale: 93.01567077636719
+      Target Frame: odom
+      X: 0.6006293892860413
+      Y: 0.1429082453250885
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1376
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd000000040000000000000156000004c2fc0200000008fb0000001200530065006c0065006300740069006f006e000000003d000004c20000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073000000003d000004c2000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f000004c2fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000004c2000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000063a0000003efc0100000002fb0000000800540069006d006501000000000000063a000003bc00fffffffb0000000800540069006d006501000000000000045000000000000000000000063a000004c200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1594
+  X: 72
+  Y: 27

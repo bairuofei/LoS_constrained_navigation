@@ -31,7 +31,7 @@ Ruofei Bai<sup>1,2</sup>, Shenghai Yuan<sup>1</sup>, Kun Li<sup>3</sup>, Honglia
 
 Short video to intorduce our work:
 
-[![](./video_cover.png)](https://www.bilibili.com/video/BV1UB7fzVEeu/?spm_id_from=333.337.search-card.all.click&vd_source=2d11232d984feb225a544f200a5b226e)
+[![](assets/video_cover.png)](https://www.bilibili.com/video/BV1UB7fzVEeu/?spm_id_from=333.337.search-card.all.click&vd_source=2d11232d984feb225a544f200a5b226e)
 
 
 
@@ -39,4 +39,53 @@ Short video to intorduce our work:
 
 Please wait for the simulation gif to load...
 
-![Four-robot navigation](demo.gif)
+![Four-robot navigation](assets/demo.gif)
+
+
+## Quick Start
+### 1. Initial configuration
+
+#### (1) Specify simulation environment
+> Specified in the launch file of vehicle_simulator package
+- map name (also required by connectivity_controller)
+- robot number (also required by mapper, connectivity_controller)
+
+#### (2) Set task specification
+> Specified in the yaml file
+- For exploration, set robots' initial positions 
+- For navigation, set both robots' and targets' positions
+
+
+### 2. Multi-Robot Navigation under LoS contraints
+#### Four robot navigation
+```bash
+## Under ros project: autonomous_exploration_development_environment
+# Launch gazebo simulator & far_planner
+# cd /home/ruofei/code/cpp/autonomous_exploration_development_environment
+roslaunch vehicle_simulator four_robot.launch
+
+## Under ros project: catkin_ws_connectivity
+# Launch laser scan filter & connectivity controller
+roslaunch connectivity_exploration run_four_exploration.launch
+
+roslaunch connectivity_exploration publish_stop.launch
+```
+
+
+### 3. Multi-Robot Exploration under LoS constraints
+#### Four robot exploration
+```bash
+## Under ros project: autonomous_exploration_development_environment
+# Launch gazebo simulator & far_planner
+# cd /home/ruofei/code/cpp/autonomous_exploration_development_environment
+roslaunch vehicle_simulator four_robot.launch
+
+# Create occupancy map & outputs frontier points
+roslaunch multi_slam_realm multi_connect_karto.launch
+
+## Under ros project: catkin_ws_connectivity
+# Launch laser scan filter & connectivity controller
+roslaunch connectivity_exploration run_four_exploration.launch
+
+roslaunch connectivity_exploration publish_stop.launch
+```

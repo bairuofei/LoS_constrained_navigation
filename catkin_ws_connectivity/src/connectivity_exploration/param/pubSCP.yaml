@@ -1,0 +1,20 @@
+# Radius for spherical flipping
+SCPradius: 50  #s should be larger than both visiableRange, and rangeMax
+# 100时的效果很好
+# SCPradius取500,可以实现明显的LoS效果
+
+# Radius to add augmented points to raw point cloud
+visiableRange: 26
+
+# Initial position of the following robot
+testPointX: 2
+testPointY: 0
+
+# Coefficient in log-exp-sum relaxation
+alpha: 1
+
+
+# Derivative
+flipD: 10          # Safe distance (to convexHull) to ignore visible constraints
+flipD_min: 0.5     # Mimimum allowed distance to convexHull to maintain visible
+kS: 1              # Constant of the weight function
