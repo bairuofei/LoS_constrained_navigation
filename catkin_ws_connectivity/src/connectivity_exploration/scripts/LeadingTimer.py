@@ -32,13 +32,6 @@ class LeadingTimer:
             self.efficiency_position = position
             return True
 
-            # if self.this_leading_robot_inefficient and leading_robot_id == self.leading_robot:
-            #     return False
-            # else:  # leading robot变化，或者之前没有inefficient
-            #     self.efficiency_start_time = rospy.Time.now()
-            #     self.efficiency_position = position
-            #     return True
-    
     def is_leading_robot_moving(self, position: tuple):
         """ Check if leading robot stucked here for a predefined period. """
         if rospy.Time.now() - self.time < rospy.Duration(self.stuck_threshold):

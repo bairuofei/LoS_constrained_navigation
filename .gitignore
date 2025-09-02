@@ -1,3 +1,5 @@
 catkin_ws_connectivity/devel/
 catkin_ws_connectivity/build/
-catkin_ws_connectivity/log/
+catkin_ws_connectivity/logs/
+catkin_ws_connectivity/.*
+.catkin*

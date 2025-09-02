@@ -9,7 +9,7 @@
     <arg name="use_dk" default="false"/>
     <arg name="enable_mst" default="true"/>
     <arg name="enable_record" default="false"/>
-    <arg name="exp_suffix" default="_x"/>
+    <arg name="exp_suffix" default=""/>
 
 
     <param name="lambda_prefer" value="$(arg lambda_prefer)"/>
