@@ -1,69 +1,22 @@
-<div align ="center">
-
-<!-- <img src="./assets/logo.png" width="20%"> -->
-<h3> ICRA 2025: Realm: Real-time Line-of-Sight Maintenance in Multi-Robot Navigation with Unknown Obstacles </h3>
-
-Ruofei Bai<sup>1,2</sup>, Shenghai Yuan<sup>1</sup>, Kun Li<sup>3</sup>, Hongliang Guo<sup>4</sup>, Wei-Yun Yau<sup>2</sup>, Lihua Xie<sup>1</sup>
-
-<sup>1</sup> Nanyang Technological University,
-<sup>2</sup> Institute for Infocomm Research (I2R), Agency for Science, Technology and Research (A*STAR)
-<sup>3</sup> School of Automation, Chongqing University
-<sup>4</sup> College of Computer Science, Sichuan University
-
-
-
-<!-- <a href="https://ieeexplore.ieee.org/abstract/document/10802691"><img alt="Paper" src="https://img.shields.io/badge/Paper-IEEE%20Xplore-pink"/></a> -->
-<a href="https://arxiv.org/abs/2502.15162"><img alt="Paper" src="https://img.shields.io/badge/Paper-arXiv-8A2BE2"/></a>
-<!-- <a href='https://drive.google.com/drive/folders/1UmZ3vA1cOunB-2wgz8T1fJDebhb-gmax?usp=sharing'><img src='https://img.shields.io/badge/Dataset-UMAD-green' alt='Code&Datasets'></a>
-<a href="https://www.youtube.com/watch?v=xORb4H-AyNw"><img alt="Video" src="https://img.shields.io/badge/Video-Youtube-red"/></a>
-<a href="https://github.com/IMRL/UMAD/blob/main/Doc/UMAD-Poster.pdf"><img alt="Poster" src="https://img.shields.io/badge/Poster-blue"/></a> -->
-
-</div>
-
-
-## News
-- [2025/09/02] We have open-sourced a more advanced version extened from the ICRA paper, which is currently under review. It supports several new features:
-    - Flexible topology optimization for improved navigation efficiency;
-    - Reliable line-of-sight distance evaluation compared with previous metrics;
-    - Diverse environments for testing and reproducing the results in our paper;
-    - Convenient task specification, result recording, and comparison.
-
-- Our paper has been selected as a <span style="color:red">**Best Paper Award Finalist of ICRA 2025**</span>!
-
-
-## Demo Video
-
-Short video to intorduce our work:
-
-[![](assets/video_cover.png)](https://www.bilibili.com/video/BV1UB7fzVEeu/?spm_id_from=333.337.search-card.all.click&vd_source=2d11232d984feb225a544f200a5b226e)
-
-
-
-
-
-Please wait for the simulation gif to load...
-
-![Four-robot navigation](assets/demo.gif)
-
-
 ## Quick Start
 
 ### Dependencies
 - Ubuntu 20.04
 - ROS Noetic
 
-### Launch Simulations
+### Demo for Visible Region & Frontiers
 Terminal 1
 ```bash
 ## git clone navigation stack
 git clone git@github.com:bairuofei/realm_navigation_stack.git
 git submodule update --init --recursive
 cd realm_navigation_stack/
+git switch ras_demo
 catkin build
 source devel/setup.bash
 
 # launch simulation environment
-roslaunch vehicle_simulator four_robot.launch
+roslaunch vehicle_simulator two_robot.launch
 
 # launch mapping module for better visualization (mandatory for exploration tasks)
 roslaunch multi_slam_realm multi_connect_karto.launch
@@ -73,14 +26,21 @@ Terminal 2
 ## git clone LoS-connectivity maintenance module
 git clone git@github.com:bairuofei/LoS_constrained_navigation.git
 cd LoS_constrained_navigation/catkin_ws_connectivity
+git switch demo
 catkin build
 source devel/setup.bash
 
 # launch exploration task and connectivity controller
-roslaunch connectivity_exploration run_four_exploration.launch
+roslaunch connectivity_exploration two_robot.launch
+```
 
-# start execution
-roslaunch connectivity_exploration publish_stop.launch
+Terminal 3
+```bash
+# manually publish /robot_1/cmd_vel to control robot_1
+# 1. Add Pulgins/Rbot_Tools/Robot_Steering to load a control panel
+# 2. Specify the published topic as "/robot1/cmd_vel"
+# 3. Use the panel to control
+rqt
 ```
 
 
@@ -140,7 +100,7 @@ roslaunch connectivity_exploration publish_stop.launch
 
 
 ## Acknowledgements
-- [autonomous_exploration_development_environment](https://github.com/HongbiaoZ/autonomous_exploration_development_environment)
+- [Autonomous_exploration_development_environment](https://github.com/HongbiaoZ/autonomous_exploration_development_environment)
 - [FAR Planner](https://github.com/MichaelFYang/far_planner)
-- [multi_slam_karto](https://github.com/SunZezhou/multi_slam_karto)
-- [active_graph_slam](https://github.com/JulioPlaced/active_graph_slam)
+- [Multi_slam_karto](https://github.com/SunZezhou/multi_slam_karto)
+- [Active_graph_slam](https://github.com/JulioPlaced/active_graph_slam)

@@ -1,0 +1,36 @@
+<launch>
+    <rosparam command="load" file="$(find connectivity_exploration)/param/clutter_env.yaml"/>
+    
+    
+    <param name="flip_radius" value="1000"/>
+    
+    <group ns="/robot_1">
+        <node pkg="connectivity_exploration" type="scan_filter" name="scan_filter">
+            <param name="namespace" value="robot_1"/>
+        </node>
+
+        <node pkg="connectivity_exploration" type="pub_flipped_convexhull" name="pub_flipped_convexhull" output="screen">
+            <param name="namespace" value="robot_1"/>
+            <param name="color_r" value="1" />
+            <param name="color_g" value="0.129" />
+            <param name="color_b" value="0.0" />
+        </node>
+    </group>
+
+    <group ns="/robot_2">
+        <node pkg="connectivity_exploration" type="scan_filter" name="scan_filter">
+            <param name="namespace" value="robot_2"/>
+        </node>
+
+        <node pkg="connectivity_exploration" type="pub_flipped_convexhull" name="pub_flipped_convexhull" output="screen">
+            <param name="namespace" value="robot_2"/>
+            <param name="color_r" value="0.278" />
+            <param name="color_g" value="0.769" />
+            <param name="color_b" value="0.086" />
+        </node>
+    </group>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find connectivity_exploration)/rviz/run.rviz">
+    </node>
+
+</launch>
