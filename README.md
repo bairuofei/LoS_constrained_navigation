@@ -24,7 +24,7 @@ Ruofei Bai<sup>1,2</sup>, Shenghai Yuan<sup>1</sup>, Kun Li<sup>3</sup>, Honglia
 ## News
 - [2025/09/02] We have open-sourced a more advanced version extened from the ICRA paper, which is currently under review. It supports several new features:
     - Flexible topology optimization for improved navigation efficiency;
-    - Reliable line-of-sight distance evaluation compared with previous metrics;
+    - More reliable line-of-sight distance evaluation than previous metrics;
     - Diverse environments for testing and reproducing the results in our paper;
     - Convenient task specification, result recording, and comparison.
 
