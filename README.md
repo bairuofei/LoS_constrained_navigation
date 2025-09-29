@@ -98,6 +98,20 @@ roslaunch connectivity_exploration run_four_exploration.launch
 roslaunch connectivity_exploration publish_stop.launch
 ```
 
+## Citation
+```
+@inproceedings{bai2025realmrealtimelineofsightmaintenance,
+      title={Realm: Real-Time Line-of-Sight Maintenance in Multi-Robot Navigation with Unknown Obstacles}, 
+      author={Ruofei Bai and Shenghai Yuan and Kun Li and Hongliang Guo and Wei-Yun Yau and Lihua Xie},
+      year={2025},
+      booktitle = {2025 {IEEE} international conference on robotics and automation ({ICRA})},
+      eprint={2502.15162},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2502.15162}, 
+}
+```
+
 
 ## Acknowledgements
 - [Autonomous_exploration_development_environment](https://github.com/HongbiaoZ/autonomous_exploration_development_environment)
