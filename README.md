@@ -22,6 +22,10 @@ Ruofei Bai<sup>1,2</sup>, Shenghai Yuan<sup>1</sup>, Kun Li<sup>3</sup>, Honglia
 
 
 ## News
+- [2026/03/30] We have open-sourced the paper on Arxiv introducing the new topology optimization mechanism and polygonal visible region. The new design show more robust connectivity maintenance capability than the baseline method proposed in our ICRA 2025 paper *Realm*. 
+    - 
+
+
 - [2025/09/02] We have open-sourced a more advanced version extened from the ICRA paper, which is currently under review. It supports several new features:
     - Flexible topology optimization for improved navigation efficiency;
     - More reliable line-of-sight distance evaluation than previous metrics;
