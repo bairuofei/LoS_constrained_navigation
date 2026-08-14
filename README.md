@@ -1,3 +1,5 @@
+
+
 <div align ="center">
 
 <!-- <img src="./assets/logo.png" width="20%"> -->
@@ -101,7 +103,7 @@ roslaunch connectivity_exploration publish_stop.launch
 - For navigation, set both robots' and targets' positions
 
 ## Tasks
-#### (1) Multi-Robot Navigation under LoS contraints
+#### (1) Multi-Robot Navigation under LoS constraints
 > This task requires pre-defined initial and target positions for robots. You should specify these information in `catkin_ws_connectivity/src/connectivity_exploration/param/tasks/env_{environment_name}{suffix}.yaml`. The `environment_name` is set when launching the gazebo simulator; and the `suffix` is set in `connectivity_exploration/launch/run_four_navigation.launch` to allow various settintgs under the same environment.
 
 >We extensively use the environment `wide_grid`, because it represents the most challenging environment with cluttered obstacles that frequently block line-of-sight between robots.
